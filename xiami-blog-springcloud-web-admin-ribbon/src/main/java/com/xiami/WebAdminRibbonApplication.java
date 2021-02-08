@@ -1,0 +1,20 @@
+package com.xiami;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+
+/**
+ * Description：
+ *
+ * @version v1.0.0
+ * @author：zj
+ * @date：2021­02­08 13:31
+ */
+@SpringBootApplication
+@EnableDiscoveryClient
+public class WebAdminRibbonApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(WebAdminRibbonApplication.class,args);
+    }
+}

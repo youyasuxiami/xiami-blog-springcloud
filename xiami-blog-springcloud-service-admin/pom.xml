@@ -5,15 +5,15 @@
 
     <parent>
         <groupId>com.xiami</groupId>
-        <artifactId>xiami-dependencies</artifactId>
+        <artifactId>xiami-blog-springcloud-dependencies</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-        <relativePath>../xiami-dependencies/pom.xml</relativePath>
+        <relativePath>../xiami-blog-springcloud-dependencies/pom.xml</relativePath>
     </parent>
 
-    <artifactId>xiami-eureka</artifactId>
+    <artifactId>xiami-blog-springcloud-service-admin</artifactId>
     <packaging>jar</packaging>
 
-    <name>xiami-eureka</name>
+    <name>xiami-blog-springcloud-service-admin</name>
 
     <dependencies>
         <!-- Spring Boot Begin -->
@@ -33,14 +33,13 @@
         <!-- Spring Cloud End -->
     </dependencies>
 
-    <!--    这里新增一个该项目的启动路径-->
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.xiami.EurekaApplication</mainClass>
+                    <mainClass>com.xiami.ServiceAdminApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>

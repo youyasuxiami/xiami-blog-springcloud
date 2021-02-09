@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: xiami-blog-springcloud-config
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://192.168.102.134/root/spring-cloud-config
+          search-paths: respo
+          username: root
+          password: 12345678
+
+server:
+  #  不能改
+  port: 8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

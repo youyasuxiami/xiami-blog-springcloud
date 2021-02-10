@@ -8,5 +8,5 @@ spring:
       #      分支
       label: main
       #      哪个配置
-      profile: dev
+      profile: prod
 

@@ -15,7 +15,7 @@ server:
   #  不能改
   port: 8888
 #访问文件
-web-admin-feign.yml可以访问
+#web-admin-feign.yml可以访问
 # http://localhost:8888/web/admin-feign/main
 #或者http://localhost:8888/web-admin/feign/main
 #规则如下：

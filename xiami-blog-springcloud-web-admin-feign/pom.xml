@@ -65,6 +65,13 @@
             <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
         </dependency>
         <!-- 熔斷器儀錶盤  end-->
+        
+        <!-- 配置中心客户端  start-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+        <!-- 配置中心客户端  end-->
     </dependencies>
 
     <build>

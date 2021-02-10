@@ -3,17 +3,28 @@ spring:
     name: xiami-blog-springcloud-config
   cloud:
     config:
-      label: master
+      label: main
       server:
         git:
-          uri: https://192.168.102.134/root/spring-cloud-config
+          uri: https://github.com/youyasuxiami/spring-cloud-config.git
           search-paths: respo
-          username: root
-          password: 12345678
+          username: youyasuxiami
+          password: zj12345678
 
 server:
   #  不能改
   port: 8888
+#访问文件
+web-admin-feign.yml可以访问
+# http://localhost:8888/web/admin-feign/main
+#或者http://localhost:8888/web-admin/feign/main
+#规则如下：
+#  附：HTTP 请求地址和资源文件映射
+#  http://ip:port/{application}/{profile}[/{label}]
+#  http://ip:port/{application}-{profile}.yml
+#  http://ip:port/{label}/{application}-{profile}.yml
+#  http://ip:port/{application}-{profile}.properties
+#  http://ip:port/{label}/{application}-{profile}.properties
 
 eureka:
   client:

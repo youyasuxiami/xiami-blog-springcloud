@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: xiami-blog-springcloud-config
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+#          gitlab
+          uri: http://192.168.145.200:8929/root/spring-cloud-config.git
+          search-paths: respo
+          username: zhengjin
+          password: zj12345678
+
+server:
+  #  不能改
+  port: 8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

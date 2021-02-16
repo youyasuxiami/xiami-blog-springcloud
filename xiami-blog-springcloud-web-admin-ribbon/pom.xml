@@ -66,6 +66,13 @@
             <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
             <version>2.1.2.RELEASE</version>
         </dependency>
+
+        <!--追踪服务zipkin开始-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>
+        <!--追踪服务zipkin结束-->
     </dependencies>
 
     <build>

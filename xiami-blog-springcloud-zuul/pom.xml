@@ -52,6 +52,13 @@
         </dependency>
         <!-- zuul依赖  end-->
         <!-- Spring Cloud End -->
+
+        <!--追踪服务zipkin开始-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>
+        <!--追踪服务zipkin结束-->
     </dependencies>
 
     <build>

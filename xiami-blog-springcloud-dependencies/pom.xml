@@ -6,8 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-<!--        <version>2.2.1.RELEASE</version>-->
-        <version>2.0.3.RELEASE</version>
+        <version>2.2.1.RELEASE</version>
     </parent>
 
     <groupId>com.xiami</groupId>
@@ -27,6 +26,7 @@
         <spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
 <!--        <spring-cloud.version>Finchley.RC1</spring-cloud.version>-->
         <zipkin.version>2.10.1</zipkin.version>
+        <spring.boot.admin.version>2.2.0</spring.boot.admin.version>
     </properties>
 
     <dependencyManagement>
@@ -56,6 +56,14 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <!-- spring boot admin  start-->
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-server</artifactId>
+                <version>${spring.boot.admin.version}</version>
+            </dependency>
+            <!-- spring boot admin  end-->
         </dependencies>
     </dependencyManagement>
 

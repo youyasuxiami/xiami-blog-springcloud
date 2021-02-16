@@ -1,19 +1,11 @@
 spring:
-  application:
-    #    别人通过这个服务名找到这个服务
-    name: xiami-blog-springcloud-eureka
-  zipkin:
-    base-url: http://localhost:9411
-server:
-  port: 8761
-
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    #    false,表示服务端,默认是客户端
-    registerWithEureka: false
-    #    false,表示服务端,默认是客户端
-    fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  #客户端配置中心
+  cloud:
+    config:
+      uri: http://localhost:8888
+      #      name是配置文件的名字
+      name: eureka
+      #      分支
+      label: main
+      #      哪个配置
+      profile: dev

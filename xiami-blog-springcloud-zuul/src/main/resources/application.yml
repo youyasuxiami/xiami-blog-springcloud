@@ -11,6 +11,9 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 
 zuul:
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 60000
   routes:
     # 自定义名字
     api-a:
@@ -19,3 +22,4 @@ zuul:
     api-b:
       path: /api/b/**
       serviceId: xiami-blog-springcloud-web-admin-feign
+

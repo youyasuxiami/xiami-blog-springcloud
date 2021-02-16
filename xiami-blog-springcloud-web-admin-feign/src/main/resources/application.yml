@@ -1,5 +1,5 @@
 spring:
-#客户端配置中心
+  #客户端配置中心
   cloud:
     config:
       uri: http://localhost:8888

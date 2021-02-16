@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: xiami-blog-springcloud-zipkin
+  main:
+    allow-bean-definition-overriding: true
+
+server:
+  port: 9411
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+#zipkin版本2.8后需要下面这段配置
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
+

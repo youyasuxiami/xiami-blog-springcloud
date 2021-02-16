@@ -27,7 +27,7 @@ public class WebAdminFeignFallbackProvider implements FallbackProvider {
     @Override
     public String getRoute() {
         // ServiceId，如果需要所有调用都支持回退，则 return "*" 或 return null
-        return "xiami-blog-springcloud-web-admin-feign";
+        return "xiami-blog-springcloud-web-admin-feign1";
     }
 
     /**

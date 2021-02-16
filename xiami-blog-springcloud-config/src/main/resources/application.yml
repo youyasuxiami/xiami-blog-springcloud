@@ -12,6 +12,10 @@ spring:
           search-paths: respo
           username: youyasuxiami
           password: zj12345678
+  boot:
+    admin:
+      client:
+        url: http://localhost:8084
 
 server:
   #  不能改

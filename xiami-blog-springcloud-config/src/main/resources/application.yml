@@ -12,6 +12,7 @@ spring:
           search-paths: respo
           username: youyasuxiami
           password: zj12345678
+        default-label: main
   boot:
     admin:
       client:
